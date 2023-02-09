@@ -25,13 +25,13 @@
             background-image: url(https://github.com/devxpm/Catalist-Newsletter/blob/main/Rectangle%203.png?raw=true);
             padding: 16px;
 		}
-        table{
+        div{
             border-spacing: 0px;
         }
         tr{
            min-width: 600px;
         }
-        td{
+        div{
             padding: 24px 16px;
         }
         input[type=button]{
@@ -45,41 +45,91 @@
             cursor: pointer;
             text-decoration: none;
         }
+        .content > div{
+            width: 50%;
+        }
+        .event-details, .date{
+            display: inline-block;
+        }
+        .date{
+            background-color: #FEEFEF;
+            color: #FB7350;
+            border-radius: 2px;
+            padding: 4px 8px;
+            border: solid 1px #FB7350;
+        }
+        .event-name, .event-location{
+            display: block;
+        }
+        .link{
+            color: #FB7350;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid">
     <center>
-        <table class="header">
-            <tr id="headerbg">
-                <td style="width: 30%">
-                    <img src="https://github.com/devxpm/Catalist-Newsletter/blob/main/logo.png?raw=true" height="64" width="auto" alt="Logo" />
-                </td>
-                <td style="width: 40%">&nbsp;</td>
-                <td style="width: 30%">
+        <div class="header">
+            <div id="headerbg">
+                <div style="width: 30%">
+                    <img src="https://github.com/devxpm/Catalist-Newsletter/blob/main/logo.png?raw=divue" height="64" width="auto" alt="Logo" />
+                </div>
+                <div style="width: 40%">&nbsp;</div>
+                <div style="width: 30%">
                     <h3>NEWSLETTER</h3>
                     <p>{{Date - Date}}</p>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr class="content" style="width: 100%">
-                <td style="width: 70%">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="content" style="width: 100%">
+                <div style="width: 70%">
                     <h3>Featured News</h3>
-                    <h5>Catalist will be hosting the GTDC conference</h5>
+                    <h5>Catalist will be hosting the GdivC conference</h5>
                     <p>Lorem ipsum dolor sit amet consectetur. Elit lectus dolor in proin fermentum nec maecenas. Aliquam consectetur sociis lectus accumsan posuere ipsum hendrerit id egestas. Pretium consectetur maecenas pharetra diam morbi. Ullamcorper facilisis quisque morbi sit varius at habitant.</p>
                     <input type="button" value="Check Now"><a href="#"></a></input>
-                </td>
-                <td style="width: 30%; text-align: center;">
+                </div>
+                <div style="width: 30%; text-align: center;">
                     <img src="https://github.com/devxpm/Catalist-Newsletter/blob/main/Vector.png?raw=true" height="250" width="250" alt="image">
-                </td>
-            </tr>
-        </table>
-        <!--table>
-            <tr class="content" style="width: 100%">
-                
-            </tr>
-        </table-->
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="content" style="width: 100%">
+                <h3>Events for you</h3>
+                <div>
+                    <div class="card event">
+                        <div class="row">
+                            <div class="date">
+                                <div class="month">Jan</div>
+                                <div class="dd">20</div>
+                            </div>
+                            <div class="event-details">
+                                <div class="event-name">HFI Conference 2023</div>
+                                <div class="event-location">London, UK</div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue.</p>
+                        <a class="link" href="#">View More</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="card event">
+                    <div class="row">
+                        <div class="date">
+                            <div class="month">Feb</div>
+                            <div class="dd">02</div>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-name">CHI Conference 2023</div>
+                            <div class="event-location">Manchester, UK</div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue.</p>
+                    <a class="link" href="#">View More</a>
+                </div>
+            </div>
+        </div>
     </center>
 </div>
 </body>
