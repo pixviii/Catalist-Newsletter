@@ -44,6 +44,11 @@
         .col{
             flex: 1;
             padding: 2%;
+            width: 50%;
+        }
+        .col p{
+            font-size: 0.85rem;
+            padding: 2% 0%;
         }
         input[type=button]{
             background-image: linear-gradient(to right, #FB7350, #F85663);
@@ -56,10 +61,10 @@
             cursor: pointer;
             text-decoration: none;
         }
-        .event h3, .jobs h3{
+        .event h3, .jobs h3, .missed-posts h3, dt{
             padding-left: 4%;
         }
-        .event-row{
+        .event-row, .about-us{
             display: flex;
             padding: 2% 4%;
         }
@@ -112,6 +117,29 @@
             font-size: 0.25rem;
             padding: 0% 2%;
         }
+        
+        dd{
+            margin-left: 4%;
+            font-size: 0.75rem;
+            color: #848484;
+        }
+        dt .link{
+            font-weight: 600;
+            padding-top: 0;
+        }
+        .footer{
+            background-color: #0E0F34;
+            color:#fff;
+            text-align: center;
+            padding: 2% 0%;
+        }
+        .footer i{
+            color: #fff;
+            padding: 1%;
+        }
+        small{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -125,17 +153,15 @@
                 <p>{{Date - Date}}</p>
             </div>
         </div>
-        <div>
-            <div class="content">
-                <div class="col">
-                    <h3>Featured News</h3>
-                    <h5>Catalist will be hosting the GC conference</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur. Elit lectus dolor in proin fermentum nec maecenas. Aliquam consectetur sociis lectus accumsan posuere ipsum hendrerit id egestas. Pretium consectetur maecenas pharetra diam morbi. Ullamcorper facilisis quisque morbi sit varius at habitant.</p>
-                    <input type="button" value="Check Now"><a href="#"></a></input>
-                </div>
-                <div class="col">
-                    <img src="https://github.com/devxpm/Catalist-Newsletter/blob/main/Vector.png?raw=true" height="250" width="250" alt="image">
-                </div>
+        <div class="content">
+            <div class="col">
+                <h3>Featured News</h3>
+                <h5>Catalist will be hosting the GC conference</h5>
+                <p>Lorem ipsum dolor sit amet consectetur. Elit lectus dolor in proin fermentum nec maecenas. Aliquam consectetur sociis lectus accumsan posuere ipsum hendrerit id egestas. Pretium consectetur maecenas pharetra diam morbi. Ullamcorper facilisis quisque morbi sit varius at habitant.</p>
+                <input type="button" value="Check Now"><a href="#"></a></input>
+            </div>
+            <div class="col">
+                <img src="https://github.com/devxpm/Catalist-Newsletter/blob/main/Vector.png?raw=true" height="250" width="250" alt="image">
             </div>
         </div>    
         <div class="event">
@@ -212,7 +238,35 @@
                 </div>  <!-- JOBS CARD - 1 ENDS HERE-->
             </div>          
         </div> <!-- JOBS ENDS HERE-->
-        
+        <div class="missed-posts">
+            <h3>Posts you might have missed</h3>
+            <dl>
+                <dt><a class="link" href="#">Impact of electronic vehicles on sustainability</a></dt>
+                <dd>Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue. Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue. Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue.</dd>
+                <dt><a class="link" href="#">Impact of electronic vehicles on sustainability</a></dt>
+                <dd>Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue. Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue. Lorem ipsum dolor sit amet consectetur. Eu morbi sed sociis cras nibh. Aenean nullam consequat fringilla augue eget. Lorem nunc nunc vitae id pellentesque eu augue.</dd>
+            </dl>
+        </div>  <!-- MISSED POSTS ENDS HERE-->
+        <div class="about-us">
+            <div class="col">
+                <img src="./logo.png" height="20%" width="auto" alt="image">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur. Nisl orci vitae nisi viverra suspendisse arcu nisi. Proin ac suspendisse sagittis senectus ac diam purus volutpat eu. Eleifend orci vestibulum faucibus ultrices facilisis. Dignissim lectus id id sed nulla massa.</p>
+            </div>
+            <div class="col">
+                <img src="./abstract-image.png" height="250" width="250" alt="image">
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+            <small>Catalist Network</small>
+            <small>22 Sakura Ave,
+                Tokyo, Japan, 210192</small>
+            <a class = "link" href="#">Update Preference</a> |
+            <a class = "link" href="#">Unsubscribe</a>
+        </div>
     </div>  <!-- CONTAINER-FLUID ENDS HERE-->
 </body>
 </html>
