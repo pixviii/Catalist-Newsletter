@@ -17,8 +17,12 @@
                 sans-serif;
         }
 
-        h3 {
-            padding: 2%;
+        h3, a.link {
+            padding: 4% 4% 0% 4%;
+        }
+
+        dt a.link{
+            padding: 2% 4%;
         }
 
         body {
@@ -26,7 +30,7 @@
         }
 
         .container-fluid {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0% auto;
             background-color: #fff;
         }
@@ -39,7 +43,7 @@
 
         [class*="col-"] {
             float: left;
-            padding: 1% 2%;
+            padding: 1% 4%;
         }
 
         .col-1 {
@@ -103,6 +107,16 @@
 
             #featured-news img {
                 display: none;
+            }
+            h3{
+                font-size: 1.2em;
+            }
+            p{
+                font-size: 0.85em;
+                line-height: 1.5em;
+            }
+            dt a.link{
+            padding: 2% 4%;
             }
         }
 
@@ -366,12 +380,11 @@
         <div id="about-us" class="row">
             <div class="col-6">
                 <img src="./logo.png" alt="Catalist logo">
-                <h3>About us</h3>
                 <p>Lorem ipsum dolor sit amet consectetur. Nisl orci vitae nisi viverra suspendisse arcu nisi. Proin ac suspendisse sagittis senectus ac diam purus volutpat eu. Eleifend orci vestibulum faucibus ultrices facilisis. Dignissim lectus id id sed nulla massa.</p>
             </div>
-            <div class="col-6">
+            <!--div class="col-6">
                 <img src="./abstract-image.png" height="250" width="250" alt="image">
-            </div>
+            </div-->
         </div>
         <footer>
             <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
