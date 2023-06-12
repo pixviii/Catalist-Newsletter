@@ -108,9 +108,10 @@
           width: 100%;
         }
 
-        .door-image {
+        .col-6 .door-image {
           display: none;
         }
+
         h3 {
           font-size: 1.2em;
         }
@@ -129,9 +130,12 @@
           width: 90%;
           height: auto;
         }
-
         .col-6 {
           width: 100%;
+        }
+
+        .col-6 .door-image {
+          display: none;
         }
       }
 
@@ -140,7 +144,7 @@
         .col-6 {
           width: 50%;
         }
-        .door-image {
+        .col-6 .door-image {
           width: 100%;
           height: 100%;
         }
@@ -163,6 +167,7 @@
         .col-6 {
           width: 50%;
         }
+
         .door-image {
           width: 100%;
           height: 100%;
@@ -172,7 +177,7 @@
       #header {
         background-image: url(https://github.com/devxpm/Catalist-Newsletter/blob/main/media/Rectangle%203.png?raw=true);
         background-color: #0e0f34;
-        background-size: 100% 100%;
+        background-size: cover;
         width: 100%;
         margin: 0;
         color: white;
@@ -338,7 +343,7 @@
           <input type="button" value="Check Now" /><a href="#"></a>
         </div>
         <div class="col-6">
-          <div class="door-image"></div>
+          <div class="door-image" style="height: 100%; width: 100%"></div>
         </div>
       </div>
       <!-- END OF FEATURED NEWS-->
@@ -492,8 +497,56 @@
           </dd>
         </dl>
       </div>
-      <!-- END OF POSTS SECTION-->
 
+      <!-- END OF POSTS SECTION-->
+      <div
+        class="custom-code"
+        style="
+          box-shadow: 1px 1px 8px lightsteelblue;
+          border-radius: 8px;
+          padding: 1em;
+          margin: 1em;
+        "
+      >
+        <div class="event-title">
+          <h3 style="margin-bottom: 1%; padding: 0">May 26th Gathering</h3>
+        </div>
+        <div class="data-type" style="margin-bottom: 1%">
+          <h4><i class="fa fa-calendar" aria-hidden="true"></i> Event</h4>
+        </div>
+        <div class="time" style="margin-bottom: 1%; font-weight: 600">
+          May 26, 2023 2:30pm-4:00pm EDT
+        </div>
+        <div class="description" style="margin-bottom: 1%; color: #3b3b3b">
+          A gathering of the Catalist team, advisors, partners, and community
+          members.
+        </div>
+        <div
+          class="tag"
+          style="
+            background-color: #f9e0d5;
+            padding: 1% 2%;
+            display: flex;
+            text-align: center;
+            border-radius: 100px;
+            align-items: center;
+            width: fit-content;
+          "
+        >
+          <img
+            src="./media/circle_placeholder.png"
+            height="16px"
+            width="16px"
+            style="border-radius: 500; display: inline; margin-right: 3%"
+          />
+          <p
+            style="display: inline-block; line-height: 16px; font-size: 0.75em"
+          >
+            Festival/Gathering
+          </p>
+        </div>
+      </div>
+      <!-- END OF CUSTOM SECTION-->
       <div
         id="about-us"
         class="row"
