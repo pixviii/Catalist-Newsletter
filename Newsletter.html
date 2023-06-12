@@ -108,7 +108,7 @@
           width: 100%;
         }
 
-        #featured-news img {
+        .door-image {
           display: none;
         }
         h3 {
@@ -140,6 +140,10 @@
         .col-6 {
           width: 50%;
         }
+        .door-image {
+          width: 100%;
+          height: 100%;
+        }
       }
 
       /* Large devices (laptops/desktops, 992px and up) */
@@ -147,12 +151,21 @@
         .col-6 {
           width: 50%;
         }
+
+        .door-image {
+          width: 100%;
+          height: 100%;
+        }
       }
 
       /* Extra large devices (large laptops and desktops, 1200px and up) */
       @media only screen and (min-width: 1200px) {
         .col-6 {
           width: 50%;
+        }
+        .door-image {
+          width: 100%;
+          height: 100%;
         }
       }
 
@@ -270,8 +283,8 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        -webkit-mask-image: url(./media/Union.svg);
-        mask-image: url(./media/Union.svg);
+        -webkit-mask-image: url(https://raw.githubusercontent.com/devxpm/Catalist-Newsletter/8fa6621853e7b145b0bccf5a71013b47bd5d04a1/media/Union.svg);
+        mask-image: url(https://raw.githubusercontent.com/devxpm/Catalist-Newsletter/8fa6621853e7b145b0bccf5a71013b47bd5d04a1/media/Union.svg);
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
         -webkit-mask-size: 100% auto;
@@ -325,7 +338,7 @@
           <input type="button" value="Check Now" /><a href="#"></a>
         </div>
         <div class="col-6">
-          <div class="door-image" style="width: 100%; height: 100%"></div>
+          <div class="door-image"></div>
         </div>
       </div>
       <!-- END OF FEATURED NEWS-->
