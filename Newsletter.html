@@ -97,11 +97,43 @@
         width: 100%;
       }
 
+      /* Samsung Fold*/
+      @media only screen and (max-width: 600px) {
+        .col-8 {
+          width: 50%;
+        }
+        .company-logo {
+          height: 24px;
+          width: 24px;
+        }
+        h3.company-name {
+          font-size: 0.5em;
+          padding: 0 auto;
+          margin: 0 auto;
+        }
+
+        .catalist-logo {
+          width: 32px;
+          height: auto;
+        }
+
+        .newsletter-details {
+          display: flex;
+          flex-direction: row;
+          font-size: 0.2em;
+        }
+      }
+
       /* Extra small devices (phones, 600px and down) */
       @media only screen and (max-width: 600px) {
-        .row img {
-          width: 90%;
-          height: auto;
+        .company-name {
+          font-size: 0.75em;
+          padding-top: 0;
+        }
+
+        .catalist-logo {
+          width: 100px;
+          height: 29px;
         }
 
         .col-6 {
@@ -126,10 +158,16 @@
 
       /* Small devices (portrait tablets and large phones, 600px and up) */
       @media only screen and (min-width: 600px) {
-        .row img {
-          width: 90%;
-          height: auto;
+        .company-name {
+          font-size: 1em;
+          padding-top: 0;
         }
+
+        .catalist-logo {
+          width: 100px;
+          height: 29px;
+        }
+
         .col-6 {
           width: 100%;
         }
@@ -144,6 +182,12 @@
         .col-6 {
           width: 50%;
         }
+
+        .catalist-logo {
+          width: 200px;
+          height: 58px;
+        }
+
         .col-6 .door-image {
           width: 100%;
           height: 100%;
@@ -156,6 +200,11 @@
           width: 50%;
         }
 
+        .catalist-logo {
+          width: 200px;
+          height: 58px;
+        }
+
         .door-image {
           width: 100%;
           height: 100%;
@@ -166,6 +215,11 @@
       @media only screen and (min-width: 1200px) {
         .col-6 {
           width: 50%;
+        }
+
+        .catalist-logo {
+          width: 200px;
+          height: 58px;
         }
 
         .door-image {
@@ -300,26 +354,41 @@
 
   <body>
     <div class="container-fluid">
-      <div id="header" class="row">
-        <div class="col-8 left-header" style="display: inline-block">
+      <div id="header" class="row" style="display: flex; align-items: center">
+        <div class="col-8 left-header" style="display: flex">
           <img
             src="https://github.com/devxpm/Catalist-Newsletter/blob/main/media/logo-placeholder.png?raw=true"
-            style="width: 16%"
+            height="40px"
+            width="40px"
             alt="Logo"
+            style="margin-right: 2%"
           />
           <div
             class="header-text-left"
             style="display: inline-block; vertical-align: top"
           >
-            <h3 style="margin-left: 0; padding-left: 0">GAIA NETWORK</h3>
-            <h6 style="display: inline; font-weight: 700">Newsletter •</h6>
-            <h6 style="display: inline; font-weight: 400">Dec 1 -Dec 6 2023</h6>
+            <h3 class="company-name" style="margin-left: 0; padding-left: 0">
+              GAIA NETWORK
+            </h3>
+            <h6
+              class="newsletter-details"
+              style="display: inline; font-weight: 700"
+            >
+              Newsletter •
+            </h6>
+            <h6
+              class="newsletter-details"
+              style="display: inline; font-weight: 400"
+            >
+              Dec 1 -Dec 6 2023
+            </h6>
           </div>
         </div>
         <!-- POWERED BY CATALIST IMAGE -->
         <div class="col-4">
           <img
             src="https://github.com/devxpm/Catalist-Newsletter/blob/main/media/poweredbycatalist.png?raw=true"
+            class="catalist-logo"
           />
         </div>
       </div>
